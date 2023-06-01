@@ -12,6 +12,23 @@ a {
   text-decoration: none;
 }
 
+button {
+  background-color: #36b37f;
+  padding: 12px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 4px;
+}
+
+button:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+button:active {
+  background-color: #008552;
+}
+
 /* Toolbar */
 
 .toolbar {
@@ -114,6 +131,22 @@ a {
     grid-template-rows: repeat(6, 475px);
     gap: 20px;
   }
+
+  .about_content {
+    background-image: url("Assets/about\ me-illustration-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350.38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .box img {
+    width: 160px;
+    margin-bottom: -50px;
+  }
 }
 
 .works_cards .card {
@@ -159,19 +192,64 @@ a {
   color: #3a4a42;
 }
 
-.card_content button {
-  background-color: #36b37f;
-  padding: 12px;
-  border: none;
-  outline: none;
-  color: #fff;
-  border-radius: 4px;
+/* About */
+.about {
+  margin-top: 50px;
 }
 
-.card_content button:hover {
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+.about_content h1 {
+  color: #172b4d;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
 }
 
-.card_content button:active {
-  background-color: #008552;
+.about_content p {
+  color: #42526e;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  margin: 25px 0;
+  padding: 0 15px;
+}
+
+.about_boxes {
+  margin-top: 50px;
+}
+
+.box {
+  width: 327px;
+  height: 316px;
+  background: #ebf0ee;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.box h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #344563;
+}
+
+.box ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.box ul li {
+  background: #fff;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #36b37e;
+  border-radius: 8px;
 }
