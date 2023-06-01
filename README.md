@@ -14,6 +14,7 @@
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Install](#install)
   - [Usage](#usage)
   - [Deployment](#deployment)
 - [👥 Authors](#authors)
@@ -48,9 +49,8 @@ I created my Portfolio with Html and Css, and also added linters for Html and Cs
 
 ### Key Features <a name="key-features"></a>
 
-<!-- - Add index.html file. -->
-
-- Coming Soon
+- Add index.html file.
+- Add style.css file
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,6 +81,16 @@ Run this Command:
 ```sh
   cd my-folder
   git clone git@github.com:GhausAliKhan/My-Portfolio.git
+```
+
+### Install
+
+First you need to install the node package files
+Run this command:
+
+```sh
+  cd Hello-Microverse-Project
+  npm install
 ```
 
 ### Usage
@@ -145,7 +155,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project just give it a star
+If you like this project just give it a star ⭐️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,7 +163,7 @@ If you like this project just give it a star
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse.
+Special Thanks to Microverse Templates
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
