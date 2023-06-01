@@ -89,7 +89,7 @@ First you need to install the node package files
 Run this command:
 
 ```sh
-  cd Hello-Microverse-Project
+  cd My-Portfolio
   npm install
 ```
 
@@ -111,7 +111,7 @@ I have added the linters or tests in order to avoid anykind of typos and ensure 
 - in order to run the linter test on stylesheets:
 
 ```sh
- npx styleint "**/*.{css,scss}"
+npx stylelint "**/*.{css,scss}"
 ```
 
 ### Deployment
