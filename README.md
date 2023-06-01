@@ -137,7 +137,9 @@ npx stylelint "**/*.{css,scss}"
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] Coming Soon
+- Add Projects section
+- Add About me section
+- Add Contact me section
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
