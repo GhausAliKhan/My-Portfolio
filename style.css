@@ -1,0 +1,74 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  font-family: "Inter";
+  color: #172b4d;
+}
+a {
+  text-decoration: none;
+}
+/* Toolbar */
+
+.toolbar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 20px;
+  width: 100%;
+  height: 44px;
+}
+.toolbar button {
+  border: none;
+  background: none;
+}
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.title h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+.title h1 span {
+  color: #36b37e;
+}
+.description {
+  padding: 0px 20px;
+  margin: 5% 0%;
+}
+.description p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+.socialIcons ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .headline {
+    background-image: url("Assets/header-illsutration-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 653.32px;
+  }
+  .content {
+    margin-top: 17%;
+  }
+  .action {
+    margin-top: 100px;
+  }
+}
