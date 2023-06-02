@@ -99,54 +99,13 @@ button:active {
   text-align: center;
 }
 
-.works_content h1 {
+.works_content h3 {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-}
-
-@media screen and (min-width: 375px) and (max-width: 768px) {
-  .headline {
-    background-image: url("Assets/header-illsutration-mobile.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 653.32px;
-  }
-
-  .headline_content {
-    margin-top: 17%;
-  }
-
-  .works_content h1 {
-    padding: 0 30px;
-    margin-bottom: 25px;
-  }
-
-  .works_cards {
-    margin-top: 25px;
-    display: grid;
-    grid-template-columns: auto;
-    padding: 5%;
-    grid-template-rows: repeat(6, 475px);
-    gap: 20px;
-  }
-
-  .about_content {
-    background-image: url("Assets/about\ me-illustration-mobile.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 350.38px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .box img {
-    width: 160px;
-    margin-bottom: -50px;
-  }
+  padding: 0 25px;
+  margin-bottom: 15px;
 }
 
 .works_cards .card {
@@ -158,8 +117,12 @@ button:active {
 }
 
 .card_image {
-  background-color: #eee;
   height: 50%;
+}
+
+.card_image img {
+  height: 100%;
+  width: 100%;
 }
 
 .card_content {
@@ -170,7 +133,7 @@ button:active {
   justify-content: space-around;
 }
 
-.card_content h1 {
+.card_content h3 {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -197,7 +160,14 @@ button:active {
   margin-top: 50px;
 }
 
-.about_content h1 {
+.about_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about_content h3 {
   color: #172b4d;
   font-style: normal;
   font-weight: 700;
@@ -231,7 +201,7 @@ button:active {
   border-radius: 10px;
 }
 
-.box h1 {
+.box h3 {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -252,4 +222,43 @@ button:active {
   font-size: 12px;
   color: #36b37e;
   border-radius: 8px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .headline {
+    background-image: url("Assets/header-illsutration-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 653.32px;
+  }
+
+  .headline_content {
+    margin-top: 17%;
+  }
+
+  .works_content h1 {
+    padding: 0 30px;
+    margin-bottom: 25px;
+  }
+
+  .works_cards {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: auto;
+    padding: 5%;
+    grid-template-rows: repeat(6, 475px);
+    gap: 20px;
+  }
+
+  .about_content {
+    background-image: url("Assets/about\ me-illustration-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350.38px;
+  }
+
+  .box img {
+    width: 160px;
+    margin-bottom: -50px;
+  }
 }
