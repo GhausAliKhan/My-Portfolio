@@ -258,11 +258,13 @@ button:active {
     background-position: center;
     height: 350.38px;
   }
+
   .box img {
     width: 160px;
     margin-bottom: -50px;
   }
 }
+
 .illustration1 {
   display: flex;
   align-items: center;
