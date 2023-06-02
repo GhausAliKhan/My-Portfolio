@@ -157,7 +157,7 @@ button:active {
 
 /* About */
 .about {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .about_content {
@@ -173,6 +173,8 @@ button:active {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  padding-right: 25px;
+  margin-bottom: -40px;
 }
 
 .about_content p {
@@ -181,7 +183,7 @@ button:active {
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
-  margin: 25px 0;
+  margin-bottom: 15px;
   padding: 0 15px;
 }
 
@@ -256,9 +258,13 @@ button:active {
     background-position: center;
     height: 350.38px;
   }
-
   .box img {
     width: 160px;
     margin-bottom: -50px;
   }
+}
+.illustration1 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
