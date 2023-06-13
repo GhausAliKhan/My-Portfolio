@@ -270,3 +270,13 @@ button:active {
   align-items: center;
   justify-content: end;
 }
+
+#ContactForm {
+  background-color: #6070ff;
+  border-top-left-radius: 80px;
+  height: 800px;
+  flex: none;
+  order: 5;
+  flex-grow: 0;
+  align-content: center;
+}
