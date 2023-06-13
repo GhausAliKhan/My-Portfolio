@@ -167,7 +167,32 @@ button:active {
   text-align: center;
 }
 
-.about_content h3 {
+.illustration1 img {
+  position: relative;
+  bottom: 60px;
+  left: 155px;
+}
+
+.illustration2 {
+  position: relative;
+  bottom: 100px;
+}
+
+.about_description {
+  position: relative;
+  top: -430px;
+}
+.about_description p {
+  color: #42526e;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 85px;
+  padding: 0 15px;
+}
+
+.about_content .illustration1 h3 {
   color: #172b4d;
   font-style: normal;
   font-weight: 700;
@@ -178,17 +203,6 @@ button:active {
 }
 
 .about_content p {
-  color: #42526e;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  margin-bottom: 15px;
-  padding: 0 15px;
-}
-
-.about_boxes {
-  margin-top: 50px;
 }
 
 .box {
@@ -226,6 +240,62 @@ button:active {
   border-radius: 8px;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.contactHeading h3 {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  padding: 0px 10px;
+  text-align: center;
+}
+
+.contactForm ul li input {
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 10px 0px;
+  padding: 8px 20px;
+  width: 70%;
+}
+
+.contactForm ul li textarea {
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #42526e;
+  resize: none;
+  padding: 10px;
+  width: 70%;
+}
+
+.contactForm ul li button {
+  margin: 15px 0px;
+}
+.contactForm p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+.contact .socialIcons {
+  margin: 15px 0px;
+}
+
+.contactBackground img {
+  position: relative;
+  bottom: 175px;
+  right: -155px;
+}
+
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .headline {
     background-image: url("Assets/header-illsutration-mobile.png");
@@ -252,31 +322,8 @@ button:active {
     gap: 20px;
   }
 
-  .about_content {
-    background-image: url("Assets/about\ me-illustration-mobile.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 350.38px;
-  }
-
   .box img {
     width: 160px;
     margin-bottom: -50px;
   }
-}
-
-.illustration1 {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-}
-
-#ContactForm {
-  background-color: #6070ff;
-  border-top-left-radius: 80px;
-  height: 800px;
-  flex: none;
-  order: 5;
-  flex-grow: 0;
-  align-content: center;
 }
