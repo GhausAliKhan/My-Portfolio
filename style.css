@@ -182,6 +182,7 @@ button:active {
   position: relative;
   top: -430px;
 }
+
 .about_description p {
   color: #42526e;
   font-style: normal;
@@ -190,6 +191,23 @@ button:active {
   line-height: 32px;
   margin-bottom: 85px;
   padding: 0 15px;
+}
+
+.box h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #344563;
+}
+
+.contactHeading h3 {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  padding: 0 10px;
+  text-align: center;
 }
 
 .about_content .illustration1 h3 {
@@ -214,14 +232,6 @@ button:active {
   border-radius: 10px;
 }
 
-.box h3 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  color: #344563;
-}
-
 .box ul {
   list-style: none;
   display: flex;
@@ -242,14 +252,6 @@ button:active {
   flex-direction: column;
   text-align: center;
 }
-.contactHeading h3 {
-  color: #172b4d;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  padding: 0px 10px;
-  text-align: center;
-}
 
 .contactForm ul li input {
   border: 1px solid #d0d9d4;
@@ -258,7 +260,7 @@ button:active {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  margin: 10px 0px;
+  margin: 10px 0;
   padding: 8px 20px;
   width: 70%;
 }
@@ -276,15 +278,17 @@ button:active {
 }
 
 .contactForm ul li button {
-  margin: 15px 0px;
+  margin: 15px 0;
 }
+
 .contactForm p {
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
 }
+
 .contact .socialIcons {
-  margin: 15px 0px;
+  margin: 15px 0;
 }
 
 .contactBackground img {
