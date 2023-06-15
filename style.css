@@ -40,9 +40,12 @@ button:active {
 }
 
 .toolbar button {
-  margin-right: 25px;
   border: none;
   background: none;
+}
+
+.toolbar ul {
+  display: none;
 }
 
 .headline {
@@ -51,23 +54,30 @@ button:active {
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-image: url("Assets/header-illsutration-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 653.32px;
   width: 100%;
 }
 
-.title h1 {
+.headline_content {
+  margin-top: 70px;
+}
+
+.title h3 {
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 38px;
   line-height: 52px;
 }
 
-.title h1 span {
+.title h3 span {
   color: #36b37e;
 }
 
 .description {
-  padding: 0 20px;
-  margin: 5% 0%;
+  padding: 15px 20px;
 }
 
 .description p {
@@ -87,9 +97,10 @@ button:active {
 }
 
 .action {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
+/* PORTFOLIO/WORKS */
 .works_content {
   margin-top: 25px;
   display: flex;
@@ -106,6 +117,14 @@ button:active {
   line-height: 52px;
   padding: 0 25px;
   margin-bottom: 15px;
+}
+
+.works_cards {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(6, 475px);
+  padding: 3% 5%;
+  gap: 15px;
 }
 
 .works_cards .card {
@@ -189,8 +208,16 @@ button:active {
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
-  margin-bottom: 85px;
+  margin-bottom: 80px;
   padding: 0 15px;
+}
+
+.about_boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -350px;
 }
 
 .box h3 {
@@ -247,6 +274,7 @@ button:active {
   border-radius: 8px;
 }
 
+/* CONTACT */
 .contact {
   display: flex;
   flex-direction: column;
@@ -297,30 +325,87 @@ button:active {
   right: -155px;
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  /* TOOLBAR */
+  .toolbar {
+    justify-content: center;
+  }
+
+  .toolbar button {
+    display: none;
+  }
+
+  .toolbar ul {
+    width: 15%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* HEADLINE */
   .headline {
-    background-image: url("Assets/header-illsutration-mobile.png");
-    background-repeat: no-repeat;
+    background-image: url("/Assets/Header-llustration-desktop.png");
+    background-size: contain;
     background-position: center;
-    height: 653.32px;
+    background-repeat: no-repeat;
   }
 
   .headline_content {
-    margin-top: 17%;
+    margin-top: -70px;
   }
 
-  .works_content h1 {
-    padding: 0 30px;
-    margin-bottom: 25px;
+  .headline_content .title div {
+    display: flex;
+    justify-content: center;
   }
+
+  .about_description p {
+    margin-bottom: 15px;
+  }
+
+  .headline_content .description p {
+    padding: 0 28.25%;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .action {
+    margin-top: 50px;
+  }
+
+  /* PORTFOLIO */
 
   .works_cards {
-    margin-top: 25px;
     display: grid;
-    grid-template-columns: auto;
-    padding: 5%;
-    grid-template-rows: repeat(6, 475px);
-    gap: 20px;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: auto;
+    padding: 3% 5%;
+    gap: 15px;
+  }
+
+  .works_cards .card {
+    height: 550px;
+  }
+
+  /* ABOUT */
+  .illustration1 img {
+    display: none;
+  }
+
+  .illustration2 img {
+    display: none;
+  }
+
+  .about_description {
+    top: 60px;
+    padding: 0% 19.75%;
+  }
+
+  .about_boxes {
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 125px;
   }
 
   .box img {

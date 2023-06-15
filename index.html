@@ -13,15 +13,22 @@
 <body>
     <!-- Toolbar -->
     <nav class="toolbar">
-        <button><img src="Assets/Icon - Menu.png" alt=""></b>
+        <button><img src="Assets/Icon - Menu.png" alt="hamburger"></button>
+        <ul>
+            <li> <a href="#portfolio">Portfolio</a> </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
     <!-- Headline -->
     <section class="headline">
         <div class="headline_content">
             <div class="title">
-                <h1>
-                    Hey there. <br> I'm Ghaus. <br> <span>I'm a software <br> developer</span>
-                </h1>
+                <div>
+                    <h3>Hey there.</h3>
+                    <h3>I'm Ghaus.</h3>
+                </div>
+                <h3><span>I'm a software developer</span></h3>
             </div>
             <div class="description">
                 <p>
@@ -29,6 +36,7 @@
                     you
                     like what you see and have a project you need coded, don’t hesitate to contact me.
                 </p>
+
             </div>
             <div class="socialIcons">
                 <ul>
@@ -57,18 +65,19 @@
                 </ul>
             </div>
             <div class="action">
-                <img src="Assets/Disabled.png" alt="">
+                <img src="Assets/Disabled.png" alt="action">
             </div>
 
         </div>
     </section>
     <!-- Works -->
-    <section class="works">
+    <section id="portfolio" class="works">
         <div class="works_content">
             <h3>My Recent Works</h3>
-            <img src="Assets/Indicator.png" alt="">
+            <img src="Assets/Indicator.png" alt="Indicator">
         </div>
         <div class="works_cards">
+
             <div class="card">
                 <div class="card_image">
                     <img src="Assets/Img Plaholder.png" alt="Image placeholder">
@@ -84,6 +93,7 @@
                     <button>See Project</button>
                 </div>
             </div>
+
             <div class="card">
                 <div class="card_image">
                     <img src="Assets/Img Plaholder.png" alt="Image placeholder">
@@ -162,7 +172,7 @@
         </div>
     </section>
     <!-- About -->
-    <section class="about">
+    <section id="about" class="about">
         <div class="about_content">
             <div class="illustration1">
                 <h3>About Me</h3>
@@ -177,49 +187,50 @@
                     don’t hesitate to contact me.</p>
                 <button>Get my Resume</button>
             </div>
-            <div class="about_boxes">
-                <div class="box">
-                    <div> <img src="Assets/icon-languages.png" alt="Languages"></div>
-                    <h3>Languages</h3>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>Ruby</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </div>
-                <div class="box">
-                    <div> <img src="Assets/icon-frameworks.png" alt="Frameworks"></div>
-                    <h3>Frameworks</h3>
-                    <ul>
-                        <li>React.js</li>
-                        <li>Ruby on Rails</li>
-                        <li>RSpec</li>
-                    </ul>
-                    <ul>
-                        <li>Capybara</li>
-                        <li>Selenium</li>
-                    </ul>
-                </div>
-                <div class="box">
-                    <div> <img src="Assets/icon-skills.png" alt="Skils"></div>
-                    <h3>Skils</h3>
-                    <ul>
-                        <li>Database Management</li>
-                        <li>Version Control</li>
 
-                    </ul>
-                    <ul>
-                        <li>CLI</li>
-                        <li>Web Development</li>
-                        <li>API Design</li>
-                    </ul>
-                </div>
+        </div>
+        <div class="about_boxes">
+            <div class="box">
+                <div> <img src="Assets/icon-languages.png" alt="Languages"></div>
+                <h3>Languages</h3>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Ruby</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+            <div class="box">
+                <div> <img src="Assets/icon-frameworks.png" alt="Frameworks"></div>
+                <h3>Frameworks</h3>
+                <ul>
+                    <li>React.js</li>
+                    <li>Ruby on Rails</li>
+                    <li>RSpec</li>
+                </ul>
+                <ul>
+                    <li>Capybara</li>
+                    <li>Selenium</li>
+                </ul>
+            </div>
+            <div class="box">
+                <div> <img src="Assets/icon-skills.png" alt="Skils"></div>
+                <h3>Skils</h3>
+                <ul>
+                    <li>Database Management</li>
+                    <li>Version Control</li>
+
+                </ul>
+                <ul>
+                    <li>CLI</li>
+                    <li>Web Development</li>
+                    <li>API Design</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="contactHeading">
             <h3>
                 I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
