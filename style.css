@@ -228,15 +228,6 @@ button:active {
   color: #344563;
 }
 
-.contactHeading h3 {
-  color: #172b4d;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  padding: 0 10px;
-  text-align: center;
-}
-
 .about_content .illustration1 h3 {
   color: #172b4d;
   font-style: normal;
@@ -281,14 +272,17 @@ button:active {
   text-align: center;
 }
 
+.contactForm ul {
+  list-style: none;
+}
 .contactForm ul li input {
-  border: 1px solid #d0d9d4;
+  border: 1px solid #60c095;
   border-radius: 4px;
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  margin: 10px 0;
+  margin-bottom: 10%;
   padding: 8px 20px;
   width: 70%;
 }
@@ -306,23 +300,22 @@ button:active {
 }
 
 .contactForm ul li button {
-  margin: 15px 0;
+  margin-top: 10%;
 }
 
-.contactForm p {
+.contactEmail {
+  background-image: url(Assets/illustration-contact-form.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  padding: 50px 0px;
+  text-align: center;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
 }
 
-.contact .socialIcons {
+.socialIcons {
   margin: 15px 0;
-}
-
-.contactBackground img {
-  position: relative;
-  bottom: 175px;
-  right: -155px;
 }
 
 @media screen and (min-width: 768px) {
@@ -396,6 +389,14 @@ button:active {
     display: none;
   }
 
+  .about_content {
+    background-image: url(Assets/illustration-about-me-2-desktop.png),
+      url(Assets/illustration-about\ me-1-desktop.png);
+    background-position: left, right;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
   .about_description {
     top: 60px;
     padding: 0% 19.75%;
@@ -411,5 +412,48 @@ button:active {
   .box img {
     width: 160px;
     margin-bottom: -50px;
+  }
+  /* CONTACT */
+  .contact {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    margin-top: 1%;
+    height: 65vh;
+  }
+  .contact .contactHeading {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+  .contact .contactHeading h3 {
+    color: #172b4d;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 72px;
+    text-align: start;
+    padding: 0 5% 0 15%;
+  }
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+    width: 50%;
+  }
+  .contactEmail {
+    display: none;
+  }
+  .contactForm ul li input {
+    margin-bottom: 3%;
+    width: 100%;
+  }
+
+  .contactForm ul li textarea {
+    width: 100%;
+  }
+
+  .contactForm ul li button {
+    margin-top: 2%;
   }
 }
