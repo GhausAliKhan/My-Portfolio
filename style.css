@@ -271,6 +271,7 @@ button:active {
   flex-direction: column;
   text-align: center;
 }
+
 .contact .contactHeading h3 {
   color: #172b4d;
   font-weight: 700;
@@ -278,9 +279,11 @@ button:active {
   line-height: 52px;
   margin: 5% 2%;
 }
+
 .contactForm ul {
   list-style: none;
 }
+
 .contactForm ul li input {
   border: 1px solid #60c095;
   border-radius: 4px;
@@ -313,15 +316,17 @@ button:active {
   background-image: url(Assets/illustration-contact-form.png);
   background-repeat: no-repeat;
   background-position: 100%;
-  padding: 50px 0px;
+  padding: 50px 0;
   text-align: center;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
 }
+
 .contactBackground {
   visibility: hidden;
 }
+
 .socialIcons {
   margin: 15px 0;
 }
@@ -398,7 +403,8 @@ button:active {
   }
 
   .about_content {
-    background-image: url(Assets/illustration-about-me-2-desktop.png),
+    background-image:
+      url(Assets/illustration-about-me-2-desktop.png),
       url(Assets/illustration-about\ me-1-desktop.png);
     background-position: left, right;
     background-repeat: no-repeat;
@@ -421,6 +427,7 @@ button:active {
     width: 160px;
     margin-bottom: -50px;
   }
+
   /* CONTACT */
   .contact {
     display: flex;
@@ -429,11 +436,13 @@ button:active {
     margin-top: 1%;
     height: 65vh;
   }
+
   .contact .contactHeading {
     display: flex;
     align-items: center;
     width: 50%;
   }
+
   .contact .contactHeading h3 {
     color: #172b4d;
     font-weight: 700;
@@ -442,6 +451,7 @@ button:active {
     text-align: start;
     padding: 0 5% 0 15%;
   }
+
   .contactForm {
     display: flex;
     flex-direction: column;
@@ -449,9 +459,11 @@ button:active {
     padding: 0 5%;
     width: 50%;
   }
+
   .contactEmail {
     display: none;
   }
+
   .contactForm ul li input {
     margin-bottom: 3%;
     width: 100%;
@@ -464,26 +476,31 @@ button:active {
   .contactForm ul li button {
     margin-top: 2%;
   }
+
   .contactBackground {
     visibility: visible;
     position: relative;
   }
+
   .contactBackground .illustration1 {
     position: absolute;
     left: 0;
     top: -50px;
   }
+
   .contactBackground .illustration2 {
     position: absolute;
     top: 105px;
     left: 200px;
   }
+
   .contactBackground .illustration3 {
     position: absolute;
     right: 0;
     z-index: -1;
     top: -213px;
   }
+
   .bottom_bar {
     position: relative;
     height: 30px;
