@@ -54,7 +54,7 @@ button:active {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url("Assets/header-illsutration-mobile.png");
+  background-image: url("./Assets/header-illsutration-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 653.32px;
