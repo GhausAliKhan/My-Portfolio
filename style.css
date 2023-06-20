@@ -54,7 +54,7 @@ button:active {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url("Assets/header-illsutration-mobile.png");
+  background-image: url("./Assets/header-illsutration-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 653.32px;
@@ -65,14 +65,15 @@ button:active {
   margin-top: 70px;
 }
 
-.title h3 {
+.title h1,
+.title h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 38px;
   line-height: 52px;
 }
 
-.title h3 span {
+.title h2 span {
   color: #36b37e;
 }
 
@@ -339,7 +340,6 @@ button:active {
   .toolbar {
     justify-content: center;
     position: absolute;
-    z-index: -1;
   }
 
   .toolbar button {
@@ -383,7 +383,8 @@ button:active {
     color: #172b4d;
   }
 
-  .headline_content .title h3 {
+  .headline_content .title h1,
+  .title h2 {
     font-weight: 800;
     font-size: 48px;
     line-height: 60px;
