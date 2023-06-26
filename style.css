@@ -39,6 +39,11 @@ button:active {
   height: 44px;
 }
 
+.toolbar.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
 .toolbar button {
   border: none;
   background: none;
