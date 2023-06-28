@@ -232,6 +232,95 @@ button:active {
   color: #3a4a42;
 }
 
+.popupSection {
+  position: absolute;
+  top: 1150px;
+  display: none;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  justify-content: center;
+  margin-left: 10%;
+  padding: 75px 0;
+  border-radius: 15px;
+  width: 80%;
+}
+
+.popup .snapshoot {
+  text-align: center;
+}
+
+.popupContent {
+  width: 80%;
+  margin-top: 25px;
+}
+
+.titleAndButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleAndButtons h2 {
+  width: 50%;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.titleAndButtons div {
+  width: 50%;
+  height: 50px;
+  gap: 15px;
+  display: flex;
+  justify-content: end;
+}
+
+.titleAndButtons button {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.titleAndButtons button a {
+  color: #fff;
+}
+
+.popupSkills ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 25px 0;
+  text-align: center;
+}
+
+.popupSkills ul li {
+  background-color: #ebecf0;
+  color: #344563;
+  padding: 15px 20px;
+  border-radius: 15px;
+}
+
+.popupDescription {
+  font-size: 16px;
+  line-height: 30px;
+  color: #344563;
+}
+
+.X {
+  position: absolute;
+  right: 12.5%;
+  top: 1.5%;
+  cursor: pointer;
+  background-color: #ebecf0;
+  border-radius: 8px;
+  padding: 4px 15px;
+  font-size: 32px;
+}
+
 /* About */
 .about {
   margin-top: 5%;
