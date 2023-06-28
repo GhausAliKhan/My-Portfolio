@@ -1,11 +1,14 @@
-const nav = document.querySelector(".toolbar");
-const openButton = document.querySelector(".menu");
-const closeButton = document.querySelector(".close");
+const hamburger = document.querySelector(".hamburger");
+const toolbarMenu = document.querySelector(".toolbar-menu");
 
-openButton.addEventListener('click', () => {
-    nav.classList.add("visible");
-})
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  toolbarMenu.classList.toggle("active");
+});
 
-closeButton.addEventListener('click', () => {
-    nav.classList.remove("visible");
-})
+document.querySelectorAll(".menu-link").forEach((n) =>
+  n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    toolbarMenu.classList.remove("active");
+  })
+);
