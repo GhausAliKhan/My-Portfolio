@@ -225,6 +225,18 @@ button:active {
   gap: 10px;
 }
 
+.popupSkillsMobile li {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.36px;
+  background-color: #ebecf0;
+  color: #344563;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin-right: 5%;
+}
+
 .card_content ul li {
   background-color: #eee;
   padding: 8px 12px;
@@ -236,6 +248,7 @@ button:active {
   position: absolute;
   top: 1150px;
   display: none;
+  width: 100%;
 }
 
 .popup {
@@ -244,14 +257,18 @@ button:active {
   align-items: center;
   background-color: #fff;
   justify-content: center;
-  margin-left: 10%;
   padding: 75px 0;
   border-radius: 15px;
   width: 80%;
+  margin-left: 10%;
 }
 
-.popup .snapshoot {
+.popup .snapshootMobile {
   text-align: center;
+}
+
+.popup .snapshootDesktop {
+  display: none;
 }
 
 .popupContent {
@@ -259,55 +276,54 @@ button:active {
   margin-top: 25px;
 }
 
-.titleAndButtons {
-  display: flex;
-  justify-content: space-between;
-}
-
 .titleAndButtons h2 {
-  width: 50%;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 44px;
-}
-
-.titleAndButtons div {
-  width: 50%;
-  height: 50px;
-  gap: 15px;
-  display: flex;
-  justify-content: end;
-}
-
-.titleAndButtons button {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-}
-
-.titleAndButtons button a {
-  color: #fff;
 }
 
 .popupSkills ul {
   list-style: none;
+}
+
+.popupSkillsDesktop {
+  display: none;
+}
+
+.popupSkillsMobile {
   display: flex;
-  gap: 15px;
-  margin: 25px 0;
-  text-align: center;
+  margin: 15px 0;
 }
 
-.popupSkills ul li {
-  background-color: #ebecf0;
-  color: #344563;
-  padding: 15px 20px;
-  border-radius: 15px;
+.popupDescriptionDesktop {
+  display: none;
 }
 
-.popupDescription {
+.popupDescriptionMobile {
   font-size: 16px;
-  line-height: 30px;
-  color: #344563;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.popupDescriptionMobile p {
+  margin: 15px 0;
+}
+
+.popupButtons {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.popupButtons button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+}
+
+.popupButtons button a {
+  color: #fff;
 }
 
 .X {
@@ -553,6 +569,70 @@ button:active {
     margin-top: 50px;
   }
 
+  /* POPUP */
+  .popup .snapshootMobile {
+    display: none;
+  }
+
+  .popup .snapshootDesktop {
+    display: block;
+  }
+
+  .popup .titleAndButtons {
+    padding-right: 50px;
+    width: 60%;
+  }
+
+  .popup .titleAndButtons h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+
+  .popup .popupSkillsDesktop {
+    display: flex;
+    gap: 10px;
+    margin: 25px 0;
+  }
+
+  .card_content ul li {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #172b4d;
+  }
+
+  .popup .popupSkillsDesktop li {
+    padding: 8px 12px;
+    align-items: center;
+    background-color: #ebecf0;
+    color: #344563;
+    border-radius: 8px;
+  }
+
+  .popup .popupSkillsMobile {
+    display: none;
+  }
+
+  .popupDescriptionDesktop {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .popupDescriptionMobile {
+    display: none;
+  }
+
+  .popupButtons {
+    position: absolute;
+    top: 732px;
+    right: 199px;
+    width: 20%;
+  }
+
   /* PORTFOLIO */
 
   .works_cards {
@@ -575,14 +655,6 @@ button:active {
 
   .works_cards .card {
     height: 550px;
-  }
-
-  .card_content ul li {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    color: #172b4d;
   }
 
   /* ABOUT */
