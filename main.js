@@ -124,7 +124,7 @@ const geitInTouch = document.querySelector('#geitInTouch');
 const saveFormData = () => {
   const formData = {
     name: fullName.value,
-    email: email.value,
+    mail: email.value,
     message: messageBox.value,
   };
   localStorage.setItem('myFormData', JSON.stringify(formData));
@@ -137,8 +137,8 @@ geitInTouch.addEventListener('click', saveFormData);
 
 const dataStored = localStorage.getItem('myFormData');
 if (dataStored) {
-  const { name, email, message } = JSON.parse(dataStored);
+  const { name, mail, message } = JSON.parse(dataStored);
   fullName.value = name;
-  email.value = email;
+  email.value = mail;
   messageBox.value = message;
 }
