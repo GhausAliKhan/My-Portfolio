@@ -116,3 +116,21 @@ contactForm.addEventListener('submit', (event) => {
     inputList.appendChild(errorMessage);
   }
 });
+
+const fullName = document.querySelector('#fullName');
+const messageBox = document.querySelector('#messageBox');
+const geitInTouch = document.querySelector('#geitInTouch');
+
+const saveFormData = () => {
+  const formData = {
+    name: fullName.value,
+    email: email.value,
+    message: messageBox.value,
+  };
+  localStorage.setItem('myFormData', JSON.stringify(formData));
+};
+
+fullName.addEventListener('input', saveFormData);
+email.addEventListener('input', saveFormData);
+messageBox.addEventListener('input', saveFormData);
+geitInTouch.addEventListener('click', saveFormData);
