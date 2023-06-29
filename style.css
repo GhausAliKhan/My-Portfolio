@@ -477,7 +477,7 @@ button:active {
 }
 
 .contactForm ul li button {
-  margin-top: 10%;
+  margin: 1% 0;
 }
 
 .contactEmail {
@@ -493,6 +493,10 @@ button:active {
 
 .contactBackground {
   visibility: hidden;
+}
+
+span.errorMessage {
+  color: red;
 }
 
 .socialIcons {
