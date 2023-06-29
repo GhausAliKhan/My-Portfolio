@@ -12,7 +12,7 @@ document.querySelectorAll('.menu-link').forEach((n) => n.addEventListener('click
 }));
 
 const popupSection = document.querySelector('.popupSection');
-const X = document.querySelector('.X');
+const x = document.querySelector('.X');
 const page = document.querySelector('.page');
 
 document.querySelectorAll('.seeProject').forEach((n) => n.addEventListener('click', () => {
@@ -24,7 +24,7 @@ function disappear() {
   popupSection.style.display = 'none';
   page.style.filter = 'blur(0px)';
 }
-X.addEventListener('click', disappear);
+x.addEventListener('click', disappear);
 
 function disappearPage(event) {
   if (event.target.className === 'popupSection') {
@@ -100,40 +100,6 @@ const projects = [
   },
 ];
 
-// const works = document.querySelector('.works');
 console.log(projects);
 const worksCard = document.createElement('div');
 worksCard.classList.add('works-card');
-
-// works.innerHTML = `
-// <div class="works_content">
-//   <h3>My Recent Works</h3>
-//   <img src="Assets/Indicator.png" alt="Indicator">
-// </div>
-// `;
-
-// works.appendChild(worksCard);
-
-// let techList = "";
-
-// for (let i = 0; i < projects.length; i++) {
-//   techList = "";
-//   projects[i].technology.forEach((tech) => {
-//     techList += `<li>${tech}</li>`;
-//   });
-//   worksCard.innerHTML += `
-//   <div class="card">
-//     <div class="card_image">
-//         <img src="${projects[i].image}" alt="Image placeholder">
-//     </div>
-//     <div class="card_content">
-//         <h3>${projects[i].name}</h3>
-//         <ul>
-//             ${techList}
-//         </ul>
-//         <button class="seeProject">See Project</button>
-//     </div>
-// </div>
-
-//   `;
-// }
