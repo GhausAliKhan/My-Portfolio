@@ -134,3 +134,11 @@ fullName.addEventListener('input', saveFormData);
 email.addEventListener('input', saveFormData);
 messageBox.addEventListener('input', saveFormData);
 geitInTouch.addEventListener('click', saveFormData);
+
+const dataStored = localStorage.getItem('myFormData');
+if (dataStored) {
+  const { name, email, message } = JSON.parse(dataStored);
+  fullName.value = name;
+  email.value = email;
+  messageBox.value = message;
+}
