@@ -672,7 +672,8 @@ button:active {
 
   .about_content {
     height: 45vh;
-    background-image: url(Assets/illustration-about-me-2-desktop.png),
+    background-image:
+      url(Assets/illustration-about-me-2-desktop.png),
       url(Assets/illustration-about\ me-1-desktop.png);
     background-position: 0 150px, right -65px;
     background-repeat: no-repeat;
