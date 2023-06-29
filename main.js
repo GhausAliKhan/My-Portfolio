@@ -110,7 +110,7 @@ const inputList = document.querySelector('#inputList');
 const errorMessage = document.createElement('span');
 errorMessage.innerHTML = '*Your email should be in lower case';
 errorMessage.classList.add('errorMessage');
-contactForm.addEventListener("submit", (event) => {
+contactForm.addEventListener('submit', (event) => {
   if (email.value.toLowerCase() !== email.value) {
     event.preventDefault();
     inputList.appendChild(errorMessage);
