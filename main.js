@@ -103,3 +103,16 @@ const projects = [
 console.log(projects);
 const worksCard = document.createElement('div');
 worksCard.classList.add('works-card');
+
+const contactForm = document.querySelector('#contactForm');
+const email = document.querySelector('#email');
+const inputList = document.querySelector('#inputList');
+const errorMessage = document.createElement('span');
+errorMessage.innerHTML = '*Your email should be in lower case';
+errorMessage.classList.add('errorMessage');
+contactForm.addEventListener('submit', (event) => {
+  if (email.value.toLowerCase() !== email.value) {
+    event.preventDefault();
+    inputList.appendChild(errorMessage);
+  }
+});
